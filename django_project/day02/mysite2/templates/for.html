@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2>s={{ s|upper }}</h2>
+<body>
+    {% for city in lst %}
+    <h2>{{ forloop.counter }}-{{ city }}</h2>
+    {% empty %}
+    <h2>没有城市</h2>
+    {% endfor %}
+</body>
+</html>

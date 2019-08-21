@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>city</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            }
+        td,th{
+            text-align:center;
+            border: solid 1px #c5bfbf;
+            padding: 0;
+            margin: 0; 
+            padding: 3px;
+
+        }
+        th,#a{
+            background-color: #dad8d8;
+        }
+
+    </style>
+</head>
+<body>
+    <table width="400" border="0" >
+        <tr>
+            <th>项目</th>
+            <th>个人缴纳</th>
+            <th>单位缴纳</th>
+        </tr>
+        <tr>
+            <td>养老保险</td>
+            <td>{{ old1 }}</td>
+            <td>{{ old2 }}</td>
+        </tr>
+        <tr id='a'>
+            <td>失业</td>
+            <td>{{ work1 }}</td>
+            <td>{{ work2 }}</td>
+        </tr>
+        <tr>
+            <td>工伤保险</td>
+            <td>{{ gs1 }}</td>
+            <td>{{ gs2 }}</td>
+        </tr>
+        <tr id='a'>
+            <td>生育保险</td>
+            <td>{{ sy1 }}</td>
+            <td>{{ sy2 }}</td>
+        </tr>
+        <tr>
+            <td>医疗保险</td>
+            <td>{{ yl1 }}</td>
+            <td>{{ yl2 }}</td>
+        </tr>
+        <tr id='a'>
+            <td>公积金</td>
+            <td>{{ gjj1 }}</td>
+            <td>{{ gjj2 }}</td>
+        </tr>
+        <tr>
+            <td>个人缴费总和</td>
+            <td>{{ person }}</td>
+            <td></td>
+        </tr>
+        <tr id='a'>
+            <td>公司缴费总和</td>
+            <td>{{ factor }}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>纳入国家金额总和</td>
+            <td>{{ sum }}</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
